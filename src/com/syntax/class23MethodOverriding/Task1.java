@@ -1,0 +1,34 @@
+package com.syntax.class23MethodOverriding;
+
+public class Task1 {
+    /**
+     * Create a class named 'Programming'. While creating an object
+     * of the class, if nothing is passed to it, then the message
+     * "I love programming languages" should be printed. If some
+     * String is passed to it, then in place of "programming
+     * languages" the value variable should be printed. Example,
+     * if we pass "Java", then "I love Java" should be printed.
+     */
+
+    //we can overload main method too
+    public static void main(String[] args) {
+        Programming programming=new Programming();
+        new Programming("Java");
+        main("Sayed");
+    }
+    //we can overload main method as well, just remove the []
+    public static void main(String Ali) {
+        Programming programming=new Programming();
+        new Programming("Java");
+    }
+
+}
+class Programming{
+    Programming(){
+        System.out.println("I love programming languages");
+    }
+    Programming(String str){
+        System.out.println("I love "+str);
+    }
+
+}
